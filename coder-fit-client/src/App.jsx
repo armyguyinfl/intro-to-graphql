@@ -1,19 +1,9 @@
-import { useState } from 'react'
-import reactLogo from './assets/react.svg'
+import { useQuery } from '@apollo/client'
 import './App.css'
 
-import { useQuery, gql } from '@apollo/client'
+import CodersList from './components/CoderList'
 
-const CODERS = gql`
-  query Coders {
-    coders {
-      id
-      name
-      description
-      activities
-    }
-  }
-`
+import { CODERS } from './queries'
 
 function App() {
   const { loading, error, data } = useQuery(CODERS)
@@ -23,7 +13,9 @@ function App() {
 
   return (
     <div className="App">
-      <div>{JSON.stringify(data)}</div>
+      <div>
+        <CodersList coders={data.coders} />
+      </div>
     </div>
   )
 }
