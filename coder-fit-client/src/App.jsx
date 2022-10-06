@@ -1,7 +1,7 @@
 import { useQuery } from '@apollo/client'
 import './App.css'
 
-import CodersList from './components/CoderList'
+import CodersList from './components/CodersList'
 
 import { CODERS } from './queries'
 
