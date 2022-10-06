@@ -1,6 +1,6 @@
-const typeDefs = require('./schema');
+const typeDefs = require('./schema')
 
-const { ApolloServer } = require('apollo-server');
+const { ApolloServer } = require('apollo-server')
 
 const mocks = {
   Query: () => ({
@@ -17,10 +17,10 @@ const mocks = {
     description: () => 'A coder who codes.',
     activities: () => [1],
   }),
-};
+}
 
-const server = new ApolloServer({ typeDefs, mocks });
+const server = new ApolloServer({ typeDefs, mocks })
 
 server.listen().then(() => {
-  console.log('Server is running at http://localhost:4000');
-});
+  console.log('Server is running at http://localhost:4000')
+})

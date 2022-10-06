@@ -1,4 +1,4 @@
-const { gql } = require('apollo-server');
+const { gql } = require('apollo-server')
 
 const typeDefs = gql`
   # your type definitions here
@@ -23,6 +23,6 @@ const typeDefs = gql`
     name: String!
     description: String
   }
-`;
+`
 
-module.exports = typeDefs;
+module.exports = typeDefs
