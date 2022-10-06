@@ -11,11 +11,18 @@
   "license": "ISC",
   "devDependencies": {
     "dotenv": "^16.0.3",
+    "eslint": "^8.24.0",
+    "eslint-plugin-react": "^7.31.8",
     "nodemon": "^2.0.20"
   },
   "dependencies": {
     "apollo-datasource-rest": "^3.7.0",
     "apollo-server": "^3.10.2",
     "graphql": "^16.6.0"
+  },
+  "eslintConfig": {
+    "extends": [
+      "server"
+    ]
   }
 }

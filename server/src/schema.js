@@ -4,6 +4,7 @@ const typeDefs = gql`
   # your type definitions here
   type Query {
     coders: [Coder]
+    activities: [Activity]
   }
 
   type Coder {

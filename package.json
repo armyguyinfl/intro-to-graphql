@@ -2,5 +2,15 @@
   "dependencies": {
     "n": "^9.0.0",
     "stable": "^0.1.8"
+  },
+  "devDependencies": {
+    "eslint": "^8.24.0",
+    "eslint-plugin-react": "^7.31.8"
+  },
+  "eslintConfig": {
+    "extends": [
+      "api-server",
+      "api-server/jest"
+    ]
   }
 }
