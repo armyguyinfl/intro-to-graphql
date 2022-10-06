@@ -1,13 +1,11 @@
-function CodersList({ coders }) {
+import Coder from './Coder'
+
+export default function CodersList({ coders }) {
   return (
-    <div className="coders-list">
+    <div>
       {coders.map((coder) => (
-        <div className="coder" key={coder.id}>
-          <h2>{coder.name}</h2>
-          <p>{coder.description}</p>
-        </div>
+        <Coder key={coder.id} data={coder} />
       ))}
     </div>
   )
 }
-export default CodersList
