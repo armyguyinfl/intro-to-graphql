@@ -20,3 +20,17 @@ export const CODERS = gql`
     }
   }
 `
+
+export const ADD_CODER = gql`
+  mutation AddCoderMutation($name: String!, $description: String!) {
+    addCoder(name: $name, description: $description) {
+      code
+      success
+      message
+      coder {
+        name
+        description
+      }
+    }
+  }
+`

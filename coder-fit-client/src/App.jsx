@@ -2,6 +2,7 @@ import { useQuery } from '@apollo/client'
 import './App.css'
 
 import ActivityList from './components/ActivityList'
+import AddCoderForm from './components/AddCoderForm'
 import CodersList from './components/CodersList'
 
 import { ACTIVITIES, CODERS } from './queries'
@@ -21,6 +22,7 @@ function App() {
 
   return (
     <div className="App">
+      <AddCoderForm />
       <div>
         <CodersList coders={coderQuery.data.coders} />
         <ActivityList activities={activityQuery.data.activities} />

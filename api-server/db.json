@@ -4,36 +4,25 @@
       "id": 1,
       "name": "Daniel Kowalec",
       "description": "Daniel Kowalec is a coder",
-      "activities": [
-        1
-      ]
+      "activities": [1]
     },
     {
       "id": 2,
       "name": "Gene Chechel",
       "description": "Gene Chechel is a coder",
-      "activities": [
-        1,
-        2
-      ]
+      "activities": [1, 2]
     },
     {
       "id": 3,
       "name": "Chris Hamm",
       "description": "Chris Hamm is a coder",
-      "activities": [
-        1,
-        2
-      ]
+      "activities": [1, 2]
     },
     {
       "id": 4,
       "name": "Dan Denysenko",
       "description": "Dan Denysenko is a coder",
-      "activities": [
-        1,
-        2
-      ]
+      "activities": [1, 2]
     },
     {
       "id": 5,
@@ -51,6 +40,11 @@
       "name": "Andressa Kowalec",
       "description": "Andressa Kowalec is a coder",
       "id": 7
+    },
+    {
+      "name": "Blake Kowalec",
+      "description": "Blake Kowalec is a coder",
+      "id": 8
     }
   ],
   "activities": [
