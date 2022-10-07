@@ -24,6 +24,21 @@ const typeDefs = gql`
     name: String!
     description: String
   }
+
+  # Coder mutation to udpate
+  type Mutation {
+    addCoder(name: String!, description: String!): AddCoderResponse!
+  }
+  type AddCoderResponse {
+    "Similar to HTTP status code, represents the status of the mutation"
+    code: Int!
+    "Indicates whether the mutation was successful"
+    success: Boolean!
+    "Human-readable message for the UI"
+    message: String!
+    "New coder after a successful mutation"
+    coder: Coder
+  }
 `
 
 module.exports = typeDefs
